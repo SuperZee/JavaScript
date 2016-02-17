@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+				前言
+为什么学习 JavaScript?
+
+JavaScript > web 开发人员必须学习的 3 门语言中的一门：
+
+    HTML 定义了网页的内容
+    CSS 描述了网页的布局
+    JavaScript 网页的行为
+ -->
+<head>
+	<meta charset="utf-8">
+	<title>SpiColorPendra的第一个程序</title>
+	<!-- 这里存放不可见内容 -->
+	<script>
+	function displayDate(){
+		document.getElementById("showDate").innerHTML=Date();
+	}
+	</script>
+</head>
+<body>
+	<h1>第一个JavaScript程序</h1>
+	<p id="showDate">点击Button这里可以显示时间</p>
+	<button type="button" onclick="displayDate()">点击显示时间</button>
+</body>
+</html>
