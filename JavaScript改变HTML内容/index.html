@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript改变HTML内容</title>
+</head>
+<body>
+	<p id="changeContent">
+		将会被改变的内容
+	</p>
+	<button onclick="changeContent()">点击我</button>
+</body>
+
+<script>
+	function changeContent () {
+		var x = document.getElementById("changeContent"); // 第一步找到元素
+		x.innerHTML = "被改变后的内容Haha"; // Change Content
+	}
+</script>
+</html>

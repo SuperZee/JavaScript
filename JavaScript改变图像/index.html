@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 本例会动态地改变 HTML <image> 的来源（src）： -->
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript改变图像</title>
+	<script>
+	function changeImg () {
+		element = document.getElementById("img");
+		if(element.src.match("wbq"))
+		{
+			element.src = "../imgs/xm.jpg";
+		}else{
+			element.src = "../imgs/wbq.jpg";
+		}
+	}
+	</script>
+</head>
+<body>
+	<img id="img" onclick="changeImg()" src="../imgs/wbq.jpg">
+</body>
+</html>

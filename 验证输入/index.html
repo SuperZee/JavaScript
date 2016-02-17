@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ECMA-262 是JavaScript的官方名称 -->
+<head>
+	<meta charset="UTF-8">
+	<title>验证输入</title>
+</head>
+<body>
+	<input type="text" id="checkValue">
+	<input type="button" value="点击我" onclick="myFun()">
+</body>
+<script>
+	function myFun (argument) {
+		var x = document.getElementById("checkValue").value; // 获取值
+		if(x =="" || isNaN(x)){
+			// isNaN(x) 是JavaScript的一个函数 parameter 'X' 是一个必须要检测的值
+			// isNaN() 函数通常用于检测 parseFloat() 和 parseInt() 的结果，以判断它们表示的是否是合法的数字。当然也可以用 isNaN() 函数来检测算数错误，比如用 0 作除数的情况。
+			alert("不是数字")
+		}
+
+	}
+</script>
+</html>

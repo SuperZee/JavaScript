@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript改变元素样式</title>
+	<script>
+		function changeColor () {
+			element = document.getElementById("demo"); //获取元素
+			element.style.color = "#f00"; // 变成红色
+		}
+	</script>
+</head>
+<body>
+	<p id="demo">这是一个段落</p>
+	<input type="button" value="点击我" onclick="changeColor()">
+</body>
+</html>
